@@ -3,8 +3,8 @@ txt = input('Input text: ')
 txt_length = len(txt)
 upper_case = 0
 lower_case = 0
-for elem in range(0, txt_length):
-    if txt[elem].isupper():
+for symbol in txt:
+    if symbol.isupper():
         upper_case += 1
     else:
         lower_case += 1
