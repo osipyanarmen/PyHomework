@@ -6,6 +6,10 @@ def count_symbol(text: str, letter: str) -> int:
             counter += 1
     return counter
 
+# Text reverse function
+def text_reverse(text: str) -> str:
+    return text[::-1]
+
 
 # Count the symbols, count upper case and lower case in inputed text
 txt = input('Input text: ')
@@ -28,6 +32,11 @@ while txt_length != 0:
     txt_length -= 1
 print('\n')
 
+# Print the reversed inputed text using text_reverse function
+print('Reversed text using text_reverse function: ')
+print(text_reverse(txt))
+print('')
+
 # Print each word from text in new line
 print('Each word from text on new line:')
 for i in range(0, len(txt)):
@@ -40,5 +49,5 @@ print('')
 # Count chosen letters in inputed text with count_symbol function
 chosen_let = input('Select the letter you want to count: ')
 let_count = count_symbol(txt, 'a')
-print('Inputed text contains ' + str(let_count) + ' ' + chosen_let)
+print('Inputed text contains ' + str(let_count) + ' ' + "'" + chosen_let + "'")
 
