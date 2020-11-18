@@ -1,3 +1,12 @@
+# Function for counting specific letter
+def count_symbol(text: str, letter: str) -> int:
+    counter = 0
+    for letter_1 in text:
+        if letter_1 == letter:
+            counter += 1
+    return counter
+
+
 # Count the symbols, count upper case and lower case in inputed text
 txt = input('Input text: ')
 txt_length = len(txt)
@@ -26,4 +35,10 @@ for i in range(0, len(txt)):
         print(txt[i], end='')
     else:
         print('')
+print('')
+
+# Count chosen letters in inputed text with count_symbol function
+chosen_let = input('Select the letter you want to count: ')
+let_count = count_symbol(txt, 'a')
+print('Inputed text contains ' + str(let_count) + ' ' + chosen_let)
 
