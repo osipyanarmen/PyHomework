@@ -32,5 +32,5 @@ while True:
         a = int(input('X = '))
         b = int(input('Y = '))
     else:
-        print('Wrong input')
+        print('Wrong input \n')
         continue
