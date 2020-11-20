@@ -31,3 +31,6 @@ while True:
     elif operand.upper() == 'N':
         a = int(input('X = '))
         b = int(input('Y = '))
+    else:
+        print('Wrong input')
+        continue
